@@ -1,0 +1,27 @@
+Kali Linux Proxmox VM Install:
+-	Click on local storage and upload Kali Linux ISO to your ISO Images list.
+-	Click on Datacenter click on Storage, Local, and then Edit. Make sure that you have Disk Image and Container selected so that we can use them for storage when making the VM.
+-	Click on Create VM in the top right corner. 
+-	Name VM and click Next.
+-	Select Kali ISO in the ISO Image pull-down. Next
+-	Keep defaults. Next
+-	Change the disk size if you’d like we will be using 50 GiB.Da
+-	Select cores. We will be using 2.
+-	Select memory we will be using 2 MiB because our mini-PC only has 16 total, Next.
+-	Keep defaults for the bridge it will already be connected to our home network and given an IP, Next.
+-	Check start on finish and then finish.
+-	Select Graphical Install
+-	Select language and area.
+-	Select Hostname I used the default, Kali. Continue.
+-	Select the hostname we are using Camus.org. Continue.
+-	Create User, Continue.
+-	Guided – Use the entire disk, Continue.
+-	Select SCSI2 for partition, Continue.
+-	All files in one partition, Continue. Continue
+-	Yes, Continue. 
+-	Keep default boxes checked, Continue.
+-	Fold Laundry. 
+-	Yes Install GRUB boot Loader, Continue.
+-	NOT manually.  Dev sda, Continue. 
+-	Reboot
+-	Login in with the user that you created and have fun but be CAREFULE. Kali is very powerful. 
