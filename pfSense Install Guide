@@ -1,0 +1,25 @@
+Proxmox pfSense Install guide:
+
+Step 1 Install:
+-	 Go to pfSense web page and download the community edition 64-bit CD ISO. Extract the ISO using 7-zip. And upload it to your Proxmox VM selections. https://www.pfsense.org/download/
+-	Click on the node you want to create your pfSense VM.
+-	Click Create VM in the top right corner.
+-	Name your VM, Next.
+-	Select your pfSense VM image and keep all other defaults, Next. 
+-	Keep VirtIO SCSI and defaults, Next.
+-	Bus/Devices VirtIO Block, Disk Size 40, I’m using Local Storage, Next. 
+-	2 cores or whatever you have, Next.
+-	2048 Memory (2gig), Next. 
+-	Bridge defaults but this area can be used to set up all kinds of network settings. Next. Finish
+
+Step 2 VM setup:
+-	Click on the VM on the left-hand side and select Hardware under the summary tab then click Add PCI Device, Select Raw Device, and then scroll down to the Ethernet port. Click Add. 
+-	Accept.
+-	Install, OK.
+-	Auto ZFS Guided, OK.
+-	Select.
+-	Stripe No Redundancy, OK.
+-	VirtIO Block Device, press Space Bar then OK.
+-	YES, destroy the contents. 
+-	Reboot.
+-	Set up WAN and you’re ready to rock!
